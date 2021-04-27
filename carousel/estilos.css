@@ -1,0 +1,132 @@
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+.Menu {
+    font-size: large;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.Menu li a {
+    padding: 10px;
+    color: white;
+}
+
+/*tamaño de letra del titulo "vinoteca cordoba"*/
+.agrandoNombre {
+    font-size: 30px;
+}
+
+/*tamaño de letra de los iconos debajo del carrusel*/
+.letraFotos {
+    font-size: 20px;
+}
+
+.flexBodegas {
+    display: flex;
+    flex-direction: row;
+}
+
+.formulario {
+    margin: 100px;
+}
+
+.bodegas {
+    margin: 100px;
+}
+
+.emprendimiento {
+    margin: 100px;
+}
+
+.menuTienda {
+    margin: 20px auto;
+    padding: 20px;
+    width: 200px;
+}
+
+
+.contenedor {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 2fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav contenido contenido-2 contenido-3 contenido-4"
+                         "nav contenido contenido-2 contenido-3 contenido-4"
+                         "nav contenido contenido-2 contenido-3 contenido-4"
+                         "footer footer footer footer footer"
+}
+
+.row.contenedor {
+    grid-area: nav;
+}
+
+.contenedor .contenido {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor .contenido-2 {
+    grid-area: contenido-2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor .contenido-3 {
+    grid-area: contenido-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor .contenido-4 {
+    grid-area: contenido-4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor .footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centrarTextoFotos {
+    text-align: center;
+}
+
+
+div .contenedor,
+.contenedor .contenido,
+.contenedor .contenido-2,
+.contenedor .contenido-3,
+.contenedor .contenido-4 {
+    background-color:white;
+    padding: 20px;
+}
+
+.footer {
+    margin: 50px;
+}
+
+
+.animacion {
+    height: 50px;
+    transition: height 1s;
+    background-color: rgb(118, 133, 133);
+}
+
+.animacion:hover {
+    height: 100px;
+}
