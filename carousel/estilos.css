@@ -120,13 +120,95 @@ div .contenedor,
     margin: 50px;
 }
 
-
-.animacion {
-    height: 50px;
-    transition: height 1s;
-    background-color: rgb(118, 133, 133);
+.fondoH2 {
+    background-color: gray;
+    color: black;
 }
 
-.animacion:hover {
-    height: 100px;
+.TituloHistorias {
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(73, 73, 73) , rgb(148, 148, 132));
+    color: black;
 }
+
+.textosHistorias {
+    margin: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.tituloElaboracion {
+    text-align: center;
+    margin: 25px;
+    background-image: linear-gradient(to right, rgb(73, 73, 73) , rgb(148, 148, 132));
+    color: black;
+}
+
+.centrarVideo {
+    text-align: center;
+}
+
+.introElaboracion {
+    text-align: center;
+    margin: 20px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.textosElaboracion {
+    margin: 30px;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.textosIndex {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.imagenVendimia {
+    margin: 10px;
+}
+
+.imagenCrianza {
+    margin: 10px;
+    text-align: right;
+}
+
+.imagenMaceracion {
+    margin: 10px;
+    text-align: center;
+}
+
+.gridsBodegas {
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    grid-template-rows: 300px 300px;
+    margin: 5px
+}
+
+.titulosBodegasImagenes {
+    margin: 20px;
+    background-image: linear-gradient(to right, rgb(63, 42, 42) , rgb(177, 73, 73));
+    color: black;
+}
+
+.titulosH2 {
+    margin: 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+  
+ .lineasSeparadoras > ul > li {
+    display:inline;
+    border-right: 2px solid #268EBF ;
+ }
