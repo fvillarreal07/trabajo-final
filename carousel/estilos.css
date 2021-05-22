@@ -7,17 +7,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-}
-
-.Menu li a {
-    padding: 10px;
-    color: white;
 }
 
 /*tamaño de letra del titulo "vinoteca cordoba"*/
-.agrandoNombre {
+.logo {
     font-size: 30px;
 }
 
@@ -32,15 +25,11 @@ body {
 }
 
 .formulario {
-    margin: 100px;
+    margin: 30px;
 }
 
-.bodegas {
-    margin: 100px;
-}
-
-.emprendimiento {
-    margin: 100px;
+.marginBodegasIndex {
+    margin: 30px;
 }
 
 .menuTienda {
@@ -117,7 +106,7 @@ div .contenedor,
 }
 
 .footer {
-    margin: 50px;
+    text-align: center;
 }
 
 .fondoH2 {
@@ -198,7 +187,6 @@ div .contenedor,
     animation-name: aparecer;
  }
  
- 
  @keyframes aparecer {
     0% {
       opacity: 0;
@@ -212,3 +200,55 @@ div .contenedor,
     display:inline;
     border-right: 2px solid #268EBF ;
  }
+
+ .palabrasNav {
+     color: aquamarine;
+ }
+
+@media(max-width: 576px) {
+
+    .contenedor {
+        width: 100%;
+        text-align: center;
+        display: grid;
+	    grid-template-areas: 
+	    "nav contenido"
+	    "nav contenido"
+        "nav contenido"
+        "nav contenido-2"
+        "nav contenido-2"
+        "nav contenido-2"
+        "nav contenido-3"
+        "nav contenido-3"
+        "nav contenido-3"
+        "nav contenido-4"
+        "nav contenido-4"
+        "nav contenido-4"
+	    "footer footer";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(13, auto);
+    }
+    .carruselMobile {
+        width: 100%;
+        height: 450px;
+    }
+    div video {
+        display: none;
+    }
+    .imagenVendimia {
+        width: 450px;
+        height: 200px;
+    }
+    .imagenMaceracion {
+        display: none;
+    }
+    .imagenCrianza {
+        display: none;
+    }
+    .gridsBodegas {
+        display: grid;
+        grid-template-columns: 450px;
+        grid-template-rows: repeat(36, auto);
+        margin: 30px
+    }
+}

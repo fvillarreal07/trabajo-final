@@ -8,13 +8,8 @@
     <meta name="generator" content="Hugo 0.80.0">
     <title>Vinoteca Córdoba│Bodega Clos de los Siete</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
@@ -23,35 +18,34 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <b><a href="index.html" rel ="noopener" class="navbar-brand agrandoNombre">Vinoteca<span class="text-muted letraLogo">-Córdoba</span></a></b>
+          <b><a href="index.html" class="navbar-brand logo">Vinoteca Córdoba</a></b>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="collapse navbar-collapse lineasSeparadoras" id="navbarCollapse">
-            <ul class="Menu">
-              <li>
-                <b><a href="index.html#inicio" rel ="noopener">Inicio</a></b>
+            <ul class="navbar-nav mr-auto Menu">
+              <li class="nav-item dropdown">
+                <b></b><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="index.html#inicio">Inicio</a>
+                  <a class="dropdown-item" href="index.html#emprendimiento">Emprendimiento</a>
+                  <a class="dropdown-item" href="index.html#bodegas">Bodegas</a>
+                  <a class="dropdown-item" href="index.html#contacto">Contacto</a>
+                </div>
               </li>
-              <li>
-                <b><a href="index.html#emprendimiento" rel ="noopener">Emprendimiento</a></b>
-              </li>
-              <li>
-                <b><a href="index.html#bodegas" rel ="noopener">Bodegas</a></b>
-              </li>
-              <li>
-                <b><a href="index.html#contacto" rel ="noopener">Contacto</a></b>
-              </li>
-              <li>
-                <b><a href="elaboración.html" rel ="noopener">Elaboración Vinos</a></b>
-              </li>  
-              <li>
-                <b><a href="historia.html" rel ="noopener">Historia</a></b>
-              </li>  
-              <li>
-                <b><a href="imagenes.html" rel="noopener">Imagenes</a></b>
-              </li>          
-              <li>
-                <b><a href="rutini.html" rel ="noopener">Tienda</a></b>
-              </li>
-              
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="elaboración.html">Elaboración de los vinos</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="historia.html">Historia de las bodegas</a>
+                </li>  
+                <li class="nav-item">
+                  <a class="nav-link" href="imagenes.html">Imagenes</a>
+                </li>            
+                <li class="nav-item">
+                  <a class="nav-link" href="rutini.html">Tienda</a>
+                </li>           
+              </ul>
           </div>
         </nav>
     </header>
@@ -61,12 +55,12 @@
             <div class="col-4 ">
               <div class="list-group" id="list-tab" role="tablist">
                 <nav class="menuTienda">
-                <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="rutini.html" rel ="noopener"  role="tab" aria-controls="Rutini">Rutini</a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="ambrosia.html" rel ="noopener" role="tab" aria-controls="Ambrosia">Ambrosia</a>
-                <a class="list-group-item list-group-item-action active" id="list-messages-list" data-toggle="list" href="clos7.html" rel ="noopener" role="tab" aria-controls="Clos de los siete">Clos de los siete</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="Manos negras.html" rel ="noopener" role="tab" aria-controls="Manos Negras">Manos Negras</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="zuccardi.html" rel ="noopener" role="tab" aria-controls="Zuccardi">Zuccardi</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="salentein.html" rel ="noopener" role="tab" aria-controls="Salentein">Salentein</a>
+                <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="rutini.html" role="tab" aria-controls="Rutini">Rutini</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="ambrosia.html" role="tab" aria-controls="Ambrosia">Ambrosia</a>
+                <a class="list-group-item list-group-item-action active" id="list-messages-list" data-toggle="list" href="clos7.html" role="tab" aria-controls="Clos de los siete">Clos de los siete</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="Manos negras.html" role="tab" aria-controls="Manos Negras">Manos Negras</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="zuccardi.html" role="tab" aria-controls="Zuccardi">Zuccardi</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="salentein.html" role="tab" aria-controls="Salentein">Salentein</a>
                 </nav>
               </div>
             </div>
@@ -102,3 +96,4 @@
   </footer>
     
   </body>
+  </html>

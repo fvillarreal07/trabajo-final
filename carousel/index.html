@@ -9,13 +9,9 @@
     <meta name="generator" content="Hugo 0.80.0">
     <title>Vinoteca Córdoba</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">  
+ 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
@@ -23,35 +19,33 @@
     
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <b><a class="navbar-brand agrandoNombre">Vinoteca<span class="text-muted letraLogo">-Córdoba</span></a></b>
+    <b><a href="index.html" class="navbar-brand logo">Vinoteca Córdoba</a></b>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse lineasSeparadoras" id="navbarCollapse">
-      <ul class="Menu">
-        <li>
-          <b><a href="#inicio">Inicio</a></b>
+      <ul class="navbar-nav mr-auto Menu">
+        <li class="nav-item dropdown">
+          <b></b><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Inicio</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#inicio">Inicio</a>
+            <a class="dropdown-item" href="#emprendimiento">Emprendimiento</a>
+            <a class="dropdown-item" href="#bodegas">Bodegas</a>
+            <a class="dropdown-item" href="#contacto">Contacto</a>
+          </div>
         </li>
-        <li>
-          <b><a href="#emprendimiento">Emprendimiento</a></b>
+        <li class="nav-item">
+          <a class="nav-link" href="elaboración.html">Elaboración de los vinos</a>
         </li>
-        <li>
-          <b><a href="#bodegas">Bodegas</a></b>
-        </li>
-        <li>
-          <b><a href="#contacto">Contacto</a></b>
-        </li>
-        <li>
-          <b><a href="elaboración.html" rel ="noopener">Elaboración Vinos</a></b>
-        </li>
-        <li>
-          <b><a href="historia.html" rel ="noopener">Historia</a></b>
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">Historia de las bodegas</a>
         </li>    
-        <li>
-          <b><a href="imagenes.html" rel="noopener">Imagenes</a></b>
+        <li class="nav-item">
+          <a class="nav-link" href="imagenes.html">Imagenes</a>
         </li>    
-        <li>
-          <b><a href="rutini.html" rel ="noopener">Tienda</a></b>
+        <li class="nav-item">
+          <a class="nav-link" href="rutini.html">Tienda</a>
         </li>
-        
-        
       </ul>
     </div>
   </nav>
@@ -65,7 +59,7 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
-    <div id="inicio" class="carousel-inner">
+    <div id="inicio" class="carousel-inner carruselMobile">
       <div class="carousel-item active">
         <img class="bd-placeholder-img" width="100%" height="100%" src="imagenes/carrusel 4.jpg"  xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"> </text></img>
 
@@ -139,15 +133,17 @@
 
     <hr id="emprendimiento" class="featurette-divider">
 
-    <div class="row featurette emprendimiento">
+    <div class="row featurette">
       <div class="col-md-7">
         <h2 class="fondoH2">Emprendimiento</h2>
         <p class="lead textosIndex">Una familia apasionada por el vino comienza con este maravilloso emprendimiento de venta de vinos de manera online.</p>
       </div>
       
       <div class="col-md-5">
-        <img  width="400" height="250" src="imagenes/foto 1 cuerpo.jpg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="imagenes/foto 1 cuerpo.jpg" width="500" height="550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
       </div>
+    </div>
+  
 
 
       <div>
@@ -175,14 +171,10 @@
 
     <hr id="bodegas" class="featurette-divider">
 
-    <div  class="row featurette bodegas">
-      <div class="col-md-7 order-md-2">
+    <div class="marginBodegasIndex">
+      <div class="col-md-7">
         <h2 class="fondoH2">Bodegas</h2>
         <p class="lead textosIndex">Trabajamos con las mejores bodegas para ofrecerles vinos de excelente calidad. A continuacion se pueden ver cuales son estas.</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img width="350" height="250" src="imagenes/foto 2 cuerpo.jpg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></img>
-
       </div>
     </div>
 
@@ -222,7 +214,7 @@
     <hr id="contacto" class="featurette-divider">
 
 <div class="formulario">
-  <h2 class="fondoH2">Contacto</h2>
+  <h2 class="fondoH2 col-md-7">Contacto</h2>
   <p class="textosIndex"> Si querés consultar algo o dejar un comentario, coloca tus datos y nos comunicaremos con vos a la brevedad si lo desea!</p>
     <div>
       <form>   
@@ -247,15 +239,10 @@
     
     <h6>&copy; 2021 Vinoteca Córdoba &middot; Prohibído la venta a menores de 18 años &middot; Beber con moderación &middot;</h6>
   </footer>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
       
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  </body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
       
-  </body>
-  
 </html>
