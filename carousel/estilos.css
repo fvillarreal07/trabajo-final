@@ -19,6 +19,7 @@ body {
     font-size: 20px;
 }
 
+/*utilizo flexbox en los logos de las bodegas del index*/
 .flexBodegas {
     display: flex;
     flex-direction: row;
@@ -33,16 +34,36 @@ body {
 }
 
 .menuTienda {
-    margin: 20px auto;
+    margin: 10px;
     padding: 20px;
     width: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+    font-size: large;
+    background-color: rgb(140, 202, 243);
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+    border: 2px solid;
 }
 
+.contenedor ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.contenedor ul li a:hover {
+    background-color: beige;
+
+}
 
 .contenedor {
     width: 100%;
     margin: 20px auto;
-    padding: 20px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr repeat(4, 2fr);
     grid-template-rows: repeat(4, auto);
@@ -52,7 +73,7 @@ body {
                          "footer footer footer footer footer"
 }
 
-.row.contenedor {
+.contenedor {
     grid-area: nav;
 }
 
@@ -109,6 +130,7 @@ div .contenedor,
     text-align: center;
 }
 
+/*los background de los titulos del index*/
 .fondoH2 {
     background-color: gray;
     color: black;
@@ -168,19 +190,21 @@ div .contenedor,
     text-align: center;
 }
 
+/*uso grilla para ordenar las imagenes de las bodegas en la seccion "imagenes"*/
 .gridsBodegas {
     display: grid;
-    grid-template-columns: 420px 420px 420px;
-    grid-template-rows: 300px 300px;
-    margin: 5px
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 250px 250px;
+    margin: 20px
 }
 
 .titulosBodegasImagenes {
-    margin: 20px;
+    margin: 15px;
     background-image: linear-gradient(to right, rgb(63, 42, 42) , rgb(177, 73, 73));
     color: black;
 }
 
+/*titulos de la seccion "historias de las bodegas"*/
 .titulosH2 {
     margin: 20px;
     animation-duration: 3s;
@@ -196,16 +220,33 @@ div .contenedor,
     }
  }
   
+ /*lineas separadoras del nav*/
  .lineasSeparadoras > ul > li {
     display:inline;
     border-right: 2px solid #268EBF ;
  }
 
- .palabrasNav {
-     color: aquamarine;
+ /*nombre de la bodega que se esta viendo en la tienda*/
+ .inicadorBodega {
+    text-align: center;
+    background-color: rgb(0, 0, 0) ;
+    color: white;
+    font-size: 24px;
  }
 
-@media(max-width: 576px) {
+ /*le doy estilo a la pagina Error404*/
+.fondo404{
+    background-color: #268EBF;  
+    display: flex;
+    justify-content: center;
+ }
+
+.link404 {
+    font-size: x-large;
+    color: rgb(172, 9, 9);
+}
+
+ @media(max-width: 380px) {
 
     .contenedor {
         width: 100%;
@@ -225,19 +266,19 @@ div .contenedor,
         "nav contenido-4"
         "nav contenido-4"
 	    "footer footer";
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(13, auto);
     }
-    .carruselMobile {
-        width: 100%;
-        height: 450px;
+    .menuTienda {
+        height: 400px;
+        width: 100px;
     }
     div video {
-        display: none;
+        width: 350px;
+        margin: 0px;
     }
     .imagenVendimia {
-        width: 450px;
-        height: 200px;
+        display: none;
     }
     .imagenMaceracion {
         display: none;
@@ -247,8 +288,21 @@ div .contenedor,
     }
     .gridsBodegas {
         display: grid;
-        grid-template-columns: 450px;
-        grid-template-rows: repeat(36, auto);
-        margin: 30px
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(36, auto); 
+        width: 300px;
+        margin: 10px;
+    }
+    .espacioFotos {
+        padding: 5px;
+    }
+    .imagenesMobile {
+        width: 200px;
+    }
+    .carruselMobile {
+        display: none;
+    }
+    .marginCirculos {
+        margin: 25px;
     }
 }
